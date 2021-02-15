@@ -7,6 +7,12 @@
   <title>the POSER CLUB_busan</title>
 </head>
 <style>
+  ul {
+    padding-top: 20px;
+  }
+  body {
+    margin: 0;
+  }
   #container {
     color: rgb(150, 150, 150);
   }
@@ -15,6 +21,10 @@
     height: 120px;
     border-bottom: 1px solid rgb(233, 233, 233);
     padding-bottom: 10px;
+    position: fixed;
+    background-color: rgb(255, 255, 255); 
+    display: block;
+    
   }
   #header img {
     display: inline-block;
@@ -44,12 +54,15 @@
   #grid ul {
       list-style: none;
     }
-     #meue {
+  #meue {
       /* border-right: 0px solid; */
       list-style: none;
       padding-left: 360px;
-      padding-top: 20px;
+      padding-top: 40px;
     }
+  #contents, #sidetap {
+    padding-top: 95px;
+  }
   #contents {
       width: 100%;
     }
@@ -66,7 +79,11 @@
 
     @media(max-width:800px){
       nav {
-        display: none;
+      padding: 0%;
+      display: none;
+      }
+      #sidetap {
+        padding-top: 131px;
       }
       #header img{
         display: block;
@@ -80,6 +97,7 @@
       }
       #contents {
         width: 100%;
+        padding: 0px;
       }
       #contents ul {
         padding-left: 0px;
@@ -100,9 +118,11 @@
         padding-bottom: 20px;
       }
       #footer {
-        float: left;
         padding: 0px;
         padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
       }
       }
     
@@ -116,7 +136,6 @@
         <li>login</li>
         <li>cart</li>
         <li>register</li>
-
       </ul>
     </nav>
   </div>
